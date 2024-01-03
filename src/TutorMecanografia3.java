@@ -29,6 +29,7 @@ public class TutorMecanografia3 extends JFrame implements KeyListener {
         // Crear el teclado virtual
         JPanel keyboardPanel = new JPanel(new GridLayout(4, 10));
         String[] buttonLabels = {
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
                 "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P",
                 "A", "S", "D", "F", "G", "H", "J", "K", "L", "Ñ",
                 "Z", "X", "C", "V", "B", "N", "M"
@@ -94,7 +95,26 @@ public class TutorMecanografia3 extends JFrame implements KeyListener {
 
     private void agregarPangramas() {
         pangramas.add("El veloz murciélago hindú comía feliz cardillo y kiwi.");
-        // Agrega 19 pangramas adicionales...
+        pangramas.add("La cigüeña tocaba el saxofón detrás del palenque de paja." );
+        pangramas.add("El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío, añoraba a su querido cachorro.");
+        pangramas.add("Jovencillo emponzoñado de whisky, qué mala figurota exhibes.");
+        pangramas.add("Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán.");
+        pangramas.add( "Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!");
+        pangramas.add("¡Exijo hablar de un pequeño y fugaz armisticio en Kuwait! ¿Vale?");
+        pangramas.add("Le gustaba cenar un exquisito sándwich de jamón con zumo de piña y vodka fría.");
+        pangramas.add("El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque.");
+        pangramas.add("El viejo Señor Gómez pedía queso, kiwi y habas, pero le ha tocado un saxofón.");
+        pangramas.add( "La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.");
+        pangramas.add("El jefe que goza con un imprevisto busca el éxtasis en un baño de whisky.");
+        pangramas.add("Borja quiso el extraño menú de gazpacho, kiwi, uva y flan.");
+        pangramas.add("El extraño whisky quemó como fuego la boca del joven López.");
+        pangramas.add("Ex-duque gozó con imprevisto baño de flojo whisky.");
+        pangramas.add("Fidel exporta gazpacho, jamón, kiwi, viñas y buques.");
+        pangramas.add("Joven emponzoñado con whisky, ¡qué mala figura exhibiste! (Modificado).");
+        pangramas.add("La vieja cigüeña fóbica quiso empezar hoy un éxodo a Kuwait.");
+        pangramas.add("Mi pequeño ex-jefe, loco gozaba vertiendo whisky.");
+        pangramas.add("Mi jefe goza porque ve baño de excelente whisky.");
+
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("pangramas.txt"))) {
             for (String pangrama : pangramas) {
